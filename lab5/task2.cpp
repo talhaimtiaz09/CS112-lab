@@ -7,14 +7,17 @@ private:
     int *arr = new int[sz];
 
 public:
+    // constructor
     parity()
     {
         sz = 0;
     }
+    // parametrized constructor
     parity(int num)
     {
         sz = num;
     }
+    // Destructor
     ~parity()
     {
         delete[] arr;
@@ -112,6 +115,8 @@ int main()
         default:
             cout << "PLease enter only valid input!" << endl;
         }
+        // temporary input to pause screeen before clearing it and showing menu again
+        // can be replacad with system("pause") for windows
         char x;
         cout << "Press any key to continue...";
         cin >> x;

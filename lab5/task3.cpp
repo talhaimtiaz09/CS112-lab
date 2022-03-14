@@ -16,6 +16,12 @@ public:
         first = " ";
         second = " ";
     }
+    // parametrized constructor
+    stringType(string s1, string s2)
+    {
+        first = s1;
+        second = s2;
+    }
     // destructor
     ~stringType() {}
 

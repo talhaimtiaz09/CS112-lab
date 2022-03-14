@@ -6,14 +6,25 @@ private:
     int temperature;
 
 public:
+    // constructor
     Heater()
     {
         temperature = 15;
     }
+    // Parameterized contructor
+    Heater(int temp)
+    {
+        temperature = temp;
+    }
+    // Destructor
+    ~Heater() {}
+
+    // fucntion to increase temperature by 5 degree
     void warmer()
     {
         temperature += 5;
     }
+    // fucntion to decrease temperature by 5 degree
     void cooler()
     {
         temperature -= 5;
@@ -21,9 +32,6 @@ public:
     void print()
     {
         cout << "Temperature = " << temperature << endl;
-    }
-    ~Heater()
-    {
     }
 };
 
