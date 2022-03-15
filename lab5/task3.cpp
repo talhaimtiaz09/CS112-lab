@@ -119,8 +119,10 @@ public:
 
         for (int i = 0; s2[i] != '\0'; i++)
         {
-            temp[count + i] = s2[i];
+            temp[count] = s2[i];
+            count++;
         }
+        temp[count] = '\0';
 
         return temp;
     }
@@ -158,7 +160,7 @@ int main()
     s.setValue("HelloWorld", "hi");
     cout << s.searchWord("llzo") << endl;
     cout << s.searchWord("World") << endl;
-    cout << s.concatenate("hiTest", "hello") << endl;
+    cout << s.concatenate("string1+", "string2") << endl;
     cout << s.searchChar('l') << endl;
     cout << s.searchChar('z') << endl;
     s.print();
