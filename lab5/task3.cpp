@@ -157,9 +157,9 @@ int main()
 
 {
     stringType s;
-    s.setValue("HelloWorld", "hi");
-    cout << s.searchWord("llzo") << endl;
-    cout << s.searchWord("World") << endl;
+    s.setValue("Hello this is to test", "hi");
+    cout << s.searchWord("test") << endl;
+    cout << s.searchWord("this_") << endl;
     cout << s.concatenate("string1+", "string2") << endl;
     cout << s.searchChar('l') << endl;
     cout << s.searchChar('z') << endl;
